@@ -1,0 +1,57 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Flask app</title>-->
+<!--</head>-->
+<!--<body>-->
+
+<!--</body>-->
+<!--</html>-->
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<body>-->
+<!--	<h3>text Prediction Form</h3>-->
+
+<!--<div>-->
+<!--<form action="/predict" method="POST">-->
+<!--	<label for="Text">TEXT</label>-->
+<!--	<input type="text" id="text" name="text">-->
+<!--	<br>-->
+<!--	<input type="submit" value="Submit">-->
+<!--</form>-->
+<!--</div>-->
+<!--</body>-->
+<!--</html>-->
+
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+ <div class="login">
+	<h1>TEXT CLASSIFICATION</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="/predict" method="POST">
+    	<input type="text" name="TEXT" placeholder="TEXT" required="required" />
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+     {{features  }}
+   {{ prediction }}
+
+ </div>
+</body>
+</html>
